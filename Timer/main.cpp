@@ -103,39 +103,18 @@ int main(int argc, char** argv)
 
 	timer(timVal);
 
-
-	/*
-	Music mus;
-	mus.openFromFile("music.ogg");
-	//Music mus(mus);
-	mus.play();
-	mus.setVolume(5);
-	*/
-
-
-
 	SoundBuffer soundBuffer;
 	soundBuffer.loadFromFile("sound1.wav");
 	Sound sound(soundBuffer);
 	sound.play();
-
 	sound.setLoop(true);
-
 	sound.setVolume(80);
 
 	system("pause");
 	return 0;
 }
 
-
-
-
-
-
-
-
 void timer(int timVal) {
-
 	s = timVal;
 
 	while (true) {
